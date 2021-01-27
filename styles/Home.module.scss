@@ -1,0 +1,110 @@
+.main {
+  border: 1px solid black;
+  background-image:url("../pages/images/wallpapersden.com_space-windows-build-2019_1920x1080.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  .mcontainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .titles {
+      color: blue;
+    }
+
+    .Nav {
+      color: white;
+      width: 100%;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: rgba(100, 148, 237, 0.768);
+    }
+
+    .main2 {
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding-top: 20px;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+      img{
+        border-radius: 80px;
+        
+        
+      }
+      li{
+        border-bottom: 3px solid black;
+        margin-bottom: 30px;
+        width: 50%;
+        
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        list-style: none;
+        &:hover{
+          color:darkcyan ;
+        }
+      }
+      p{
+        border-bottom: 3px solid black;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+        list-style: none;
+      }
+    }
+
+  }
+
+
+}
+.Nav {
+  color: white;
+  width: 102%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(100, 148, 237, 0.714);
+}
+
+
+@media (max-width: 750px) {
+.main{
+  .mcontainer{
+    .main2{
+      width: 90%;
+    }
+  }
+}
+}
+
+@media (max-width: 400px) {
+  .main{
+    .mcontainer{
+      .main2{
+        p{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  }
