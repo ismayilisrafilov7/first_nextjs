@@ -1,8 +1,8 @@
-import styles from '../styles/Home.module.css';
-import React from 'react';
-import Link from 'next/link';
 import axios from 'axios';
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import styles from '../styles/Home.module.css';
 
 const Index =({posts})=>{
   return(
@@ -11,7 +11,7 @@ const Index =({posts})=>{
     <div className={styles.Nav}><Link href="/" ><a href="/" >Home</a></Link></div>
     <div className={styles.main2}>
     <Image src="/160692.jpg" width={150} height={150} />
-    <h1>BLOG</h1>
+    <h1>BLOGs</h1>
     {
       posts.map((post)=>(
         
